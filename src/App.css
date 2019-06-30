@@ -1,0 +1,36 @@
+h1 {
+  color: #212121;
+  border-left: 5px solid #ffcf26;
+  padding-left: 8px;
+  border-top-left-radius: 18px;
+  letter-spacing: 2px;
+}
+
+.ingredients {
+  font-size: 12px;
+  padding: 1px 2px 5px 2px;
+  display: block;
+}
+.ingredients span {
+  border: 1px solid #ffcf26;
+  padding: 1px 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 2px;
+}
+
+.recipe-description {
+  text-align: justify;
+}
+
+.recipe-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe-image-container {
+  width: 300px;
+}
+.recipe-description {
+  margin-left: 20px;
+  width: calc(100vw - 400px);
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none !important;
+  color: #212121;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.sidebar-page-wrapper {
+  display: flex;
+}
+
+.sidebar-container {
+  width: 249px;
+  padding-left: 10px;
+  background: #212121;
+  border-right: 1px solid #ffcf26;
+  color: #ffcf26;
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+}
+
+.content-container {
+  margin-left: 300px;
+}

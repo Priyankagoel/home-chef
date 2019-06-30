@@ -1,0 +1,23 @@
+
+INSERT INTO `categories` (`id`,
+`name`) VALUES
+(NULL, 'Dairy'),
+(NULL, 'Vegetables'),
+(NULL, 'Fruits'),
+(NULL, 'Baking & Grains'),
+(NULL, 'Added Sweeteners'),
+(NULL, 'Spices'),
+(NULL, 'Meats'),
+(NULL, 'Fish'),
+(NULL, 'Seafood'),
+(NULL, 'Condiments'),
+(NULL, 'Oils'),
+(NULL, 'Seasonings'),
+(NULL, 'Sauces'),
+(NULL, 'Legumes'),
+(NULL, 'Alcohol'),
+(NULL, 'Soups'),
+(NULL, 'Nuts'),
+(NULL, 'Dairy Alternatives'),
+(NULL, 'Desserts & Snacks'),
+(NULL, 'Beverages')

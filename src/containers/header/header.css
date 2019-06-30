@@ -1,0 +1,39 @@
+.appTitle a {
+  color: #ffcf26 !important;
+  padding: 0 50px;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  background: #161616;
+  font-weight: 600;
+  border-bottom: 1px solid #ffcf26;
+  border-right: 1px solid #ffcf26;
+}
+
+.header {
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 2px solid #ffcf26;
+  background: #161616;
+  color: #fefefe;
+}
+
+ul.navList {
+  display: inline-block;
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.navList > li {
+  display: inline;
+  margin: 0 15px;
+}
+ul.navList > li a {
+  color: #fefefe;
+}
+ul.navList > li a:hover,
+ul.navList > li a.active {
+  color: #ffcf26;
+}

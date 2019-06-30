@@ -1,0 +1,1 @@
+INSERT INTO `recipeingredients` (`id`, `recipe_id`, `ingredient_id`, `createdAt`, `updatedAt`) VALUES (NULL, '1', '1', '2019-06-30 00:00:00', '2019-06-30 00:00:00'), (NULL, '2', '1', '2019-06-30 00:00:00', '2019-06-30 00:00:00')
