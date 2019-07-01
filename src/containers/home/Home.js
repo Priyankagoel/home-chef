@@ -42,7 +42,8 @@ export default class Home extends Component {
         <div className=" container content-container">
           <h1>Recipes</h1>
           <div className="cards" style={this.style}>
-          {this.state.recipes.length > 0 && this.recipeCards()}{this.state.recipes.length > 0 && this.recipeCards()}{this.state.recipes.length > 0 && this.recipeCards()}{this.state.recipes.length > 0 && this.recipeCards()}{this.state.recipes.length > 0 && this.recipeCards()}{this.state.recipes.length > 0 && this.recipeCards()}{this.state.recipes.length > 0 && this.recipeCards()}{this.state.recipes.length > 0 && this.recipeCards()}
+          {this.state.recipes.length > 0 && this.recipeCards()}
+
           </div>
         </div>
       </div>
