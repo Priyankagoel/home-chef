@@ -29,7 +29,7 @@
     "nodemon": "^1.18.10"
   },
   "scripts": {
-    "start": "concurrently \"yarn start-frontend || npm run start-frontend\" \"yarn start-backend || npm run start-backend\"",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
     "start-backend": "nodemon server/server.js",
     "start-frontend": "react-scripts start",
     "build": "react-scripts build && move build server",

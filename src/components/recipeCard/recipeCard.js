@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 export default function recipeCard(props) {
   let recipe = props.recipe;
-  console.log(recipe);
   return (
     <div className="card recipe-card" key={"key-" + props.keyID}>
       <Link to={"/recipe/" + recipe.id}>

@@ -1,0 +1,7 @@
+.category-block{
+    /* overflow-y: scroll; */
+}
+
+.ingredient-list li{
+    list-style: none;
+}
