@@ -46,7 +46,7 @@ export default class HomeSidebar extends Component {
   render() { 
     return (
       <div>
-        <div className="sidebar-container" >
+        <div className="sidebar-container">
           {this.state.categories.length > 0 && this.categoryArray()}
         </div>
       </div>

@@ -1,6 +1,9 @@
 .category-block{
     /* overflow-y: scroll; */
 }
+.category-block a{
+    color: #ffcf26;
+}
 
 .ingredient-list li{
     list-style: none;

@@ -6,9 +6,10 @@ export default function category(props) {
   let category = props.category;
   return (
     <div className="category-block">
-        <label>{category.name}</label>
-        <ul className="ingredient-list">{ingredientsList(category.ingredients)}</ul>
-        
+        <a data-toggle="collapse" href={'#' + props.keyID}  aria-expanded="false">{category.name}</a>
+        <div className="collapse" id={props.keyID}  aria-expanded="false">
+          <ul className="ingredient-list">{ingredientsList(category.ingredients)}</ul>
+        </div>
     </div>
   );
   

@@ -14,6 +14,8 @@ export default class Home extends Component {
     matchedRecord: null,
     searchedRecords: false,
     checkedIngredients: [],
+    ingredients: [],
+    ingredientsState: [],
     page: 1
   };
 
@@ -91,9 +93,15 @@ export default class Home extends Component {
     
     // console.log(this.context);
 
-    // apiAxios.get("/api/categories").then(res => {
-    //   this.setState({ categories: res.data});
-    // });
+    apiAxios.get("/api/ingredients").then(res => {
+      this.setState({ ingredients: res.data});
+      for (let i = 0; i < this.state.ingredients.length; i++) {
+  
+        this.setState({ingredientsState: false});
+        
+      }
+    });
+
   }
 
   render() {

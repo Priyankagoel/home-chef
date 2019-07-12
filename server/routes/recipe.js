@@ -7,12 +7,13 @@ const Ingredient = require("../models/Ingredient");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  Recipe.findAll({
+  Recipe.findAndCountAll({
     order: [["id", "DESC"]],
     include: [
       {
         model: RecipeIngredient,
         // where: { state: Sequelize.col("") }
+        where: {ingredientId : req.query.ingredientId },
         attributes: ["id", "ingredientId"],
         include: [
           {
@@ -26,6 +27,18 @@ router.get("/", (req, res) => {
     return res.status(200).json(recipes);
   });
 });
+
+// router.get("/" , (req,res) => {
+//   Recipe.findAndCountAll({
+//     include: [
+//       {
+//         model: RecipeIngredient,
+//         where: {ingredientId : req.params.ingredientId }
+//       }
+//     ]
+//   }).then(recipe => res.status(200).json(recipe));
+
+// });
 
 router.get("/:recipeId", (req, res) => {
   Recipe.findOne({
